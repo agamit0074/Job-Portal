@@ -139,7 +139,7 @@
                     <p class="text-xs text-textMuted">Provide your registered work credentials to proceed.</p>
                 </div>
 
-                <form id="loginForm" class="space-y-4" onsubmit="handleLoginSubmit(event)">
+                <form id="loginForm"  action="employee-login" class="space-y-4"  method="post">
                     
                     <!-- Email Input Group -->
                     <div class="form-group flex flex-col gap-1.5">

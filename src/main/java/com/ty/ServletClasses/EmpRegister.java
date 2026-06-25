@@ -5,6 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -46,6 +47,9 @@ public class EmpRegister extends HttpServlet {
 		}catch(Exception e) {
 			e.printStackTrace();
 		}
+		
+		RequestDispatcher dispatcher = req.getRequestDispatcher("employee-login.jsp");
+		dispatcher.forward(req, resp);
 		
 		
 		

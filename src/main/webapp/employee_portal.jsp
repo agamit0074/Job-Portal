@@ -434,8 +434,8 @@
             </ul>
         </div>
         <div class="nav-right">
-            <a href="employee_login.jsp" class="btn btn-outline" onclick="handleAction(event)">Employer Login</a>
-            <a href="job_post.jsp" class="btn btn-solid">Sign Up / Post a Job</a>
+            <a href="employee-login.jsp" class="btn btn-outline">Employer Login</a>
+            <a href="employee-signup.jsp" class="btn btn-solid">Sign Up / Post a Job</a>
         </div>
     </nav>
 
@@ -446,7 +446,7 @@
             <p>Access a curated pool of pre-assessed developers, engineers, and tech professionals. Streamline your hiring workflow from sourcing to offering.</p>
             
             <div class="hero-actions">
-                <a href="job_post.jsp" class="btn btn-solid">
+                <a href="employee-signup.jsp" class="btn btn-solid">
                     Post a Job Now
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
