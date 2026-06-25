@@ -357,8 +357,8 @@
         </div>
         <div class="nav-right">
             <a href="employee_portal.jsp" class="employer-link">For Employers</a>
-            <a href="candidate_login.jsp" class="btn btn-outline" onclick="handleAction(event)">Login</a>
-            <a href="candidate_signup.jsp" class="btn btn-solid" onclick="handleAction(event)">Register</a>
+            <a href="candidate-login.jsp" class="btn btn-outline" onclick="handleAction(event)">Login</a>
+            <a href="candidate-signup.jsp" class="btn btn-solid" onclick="handleAction(event)">Register</a>
         </div>
     </nav>
 
@@ -402,8 +402,8 @@
                 </div>
                 <p>Register now to apply for the latest tech jobs, track your applications, and get discovered by top MNCs and startups.</p>
                 <div class="card-buttons">
-                    <a href="candidate_login.jsp" class="btn btn-outline" onclick="handleAction(event)">Login</a>
-                    <a href="candidate_signup.jsp" class="btn btn-solid" onclick="handleAction(event)">Register for Free</a>
+                    <a href="candidate-login.jsp" class="btn btn-outline" onclick="handleAction(event)">Login</a>
+                    <a href="candidate-signup.jsp" class="btn btn-solid" onclick="handleAction(event)">Register for Free</a>
                 </div>
             </div>
 
@@ -415,8 +415,8 @@
                 </div>
                 <p>Hire the top 1% of tech talent. Post your jobs, screen candidates effortlessly, and build your dream engineering team.</p>
                 <div class="card-buttons">
-                    <a href="employee_login.jsp" class="btn btn-outline" onclick="handleAction(event)">Employer Login</a>
-                    <a href="employee_signup.jsp" class="btn btn-solid" onclick="handleAction(event)">Post a Job</a>
+                    <a href="employee-login.jsp" class="btn btn-outline" onclick="handleAction(event)">Employer Login</a>
+                    <a href="employee-signup.jsp" class="btn btn-solid" onclick="handleAction(event)">Post a Job</a>
                 </div>
             </div>
 
