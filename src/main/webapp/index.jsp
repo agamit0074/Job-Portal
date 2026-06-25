@@ -439,7 +439,7 @@
             // Simulate processing time
             setTimeout(() => {
                 // In a real JSP application, allow normal form submission or link traversal:
-                // window.location.href = btn.getAttribute('href');
+                window.location.href = btn.getAttribute('href');
                 
                 // For preview purposes, we revert text
                 btn.innerText = originalText;

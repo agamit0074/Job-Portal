@@ -31,7 +31,7 @@ public class RegisterUser extends HttpServlet{
 			Class.forName("org.postgresql.Driver");
 			String url  = "jdbc:postgresql://localhost:5432/job_portal?user=postgres&password=root";
 			Connection connection = DriverManager.getConnection(url);
-			String sql = "insert into user values(?,?,?,?,?,?,?,?,?,?)";
+			String sql = "insert into users values(?,?,?,?,?,?,?,?,?,?)";
 			PreparedStatement ps = connection.prepareStatement(sql);
 			ps.setString(1,fullName);
 			ps.setString(2,email);

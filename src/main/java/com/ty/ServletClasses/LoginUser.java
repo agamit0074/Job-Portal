@@ -25,7 +25,7 @@ public class LoginUser extends HttpServlet {
 			Class.forName("org.postgresql.Driver");
 			String url  = "jdbc:postgresql://localhost:5432/job_portal?user=postgres&password=root";
 			Connection connection = DriverManager.getConnection(url);
-			String sql = "select * from user where email=? and password =?";
+			String sql = "select * from users where email=? and password =?";
 			PreparedStatement ps = connection.prepareStatement(sql);
 			ps.setString(1, email);
 			ps.setString(2, password);
