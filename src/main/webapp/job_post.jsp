@@ -346,7 +346,7 @@
             </div>
 
             <!-- Standard JSP Form submission structure -->
-            <form action="save_job" method="POST" class="job-form" onsubmit="handleJobSubmit(event)">
+            <form action="save_job" method="POST" class="job-form" ">
                 
                 <!-- SECTION 1: JOB DETAILS -->
                 <div>
