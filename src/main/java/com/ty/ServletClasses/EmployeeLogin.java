@@ -12,6 +12,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet("/employee-login")
 public class EmployeeLogin extends HttpServlet{
@@ -32,6 +33,8 @@ public class EmployeeLogin extends HttpServlet{
 			ResultSet rs = ps.executeQuery();
 			if(rs.next()) {
 				System.out.println(rs.getString(1));
+				HttpSession session = req.getSession(true);
+				session.setAttribute("email",email);
 				req.getRequestDispatcher("employee-dashboard.jsp").forward(req, resp);
 			}else {
 				resp.setContentType("text/html");

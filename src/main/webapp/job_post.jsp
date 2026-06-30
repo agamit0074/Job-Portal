@@ -317,6 +317,12 @@
             }
         }
     </style>
+    <% String email = (String)session.getAttribute("email");
+       if(email==null){
+    	   request.getRequestDispatcher("employee-login.jsp")
+    	   .forward(request, response);
+       }
+     %>
 </head>
 <body>
 

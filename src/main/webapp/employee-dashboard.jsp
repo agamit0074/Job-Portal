@@ -57,6 +57,14 @@
             background: #E55B25;
         }
     </style>
+    <!-- IN JSP PAGES THERE A SOME INBUILT OBJECT  -->
+    <!--HttpRequest,HttpResponse,HttpSession  -->
+    <% String email = (String)session.getAttribute("email");
+       if(email==null){
+    	   request.getRequestDispatcher("employee-login.jsp")
+    	   .forward(request, response);
+       }
+     %>
 </head>
 <body class="bg-bgMain text-textDark min-h-screen flex flex-col md:flex-row overflow-x-hidden">
 
@@ -93,7 +101,7 @@
                 <i class="fa-solid fa-chart-pie text-lg"></i>
                 Dashboard
             </a>
-            <a href="post_job.jsp" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm text-textMuted hover:bg-brandOrangeLight hover:text-brandOrange transition-all">
+            <a href="job_post.jsp" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-sm text-textMuted hover:bg-brandOrangeLight hover:text-brandOrange transition-all">
                 <i class="fa-solid fa-plus-circle text-lg"></i>
                 Post a Job
             </a>
@@ -116,7 +124,7 @@
         </nav>
 
         <div class="p-4 border-t border-borderColor">
-            <a href="employer_home.jsp" class="flex items-center justify-center gap-2 px-4 py-3 w-full bg-gray-100 hover:bg-red-50 text-red-600 rounded-xl font-semibold text-sm transition-all">
+            <a href="employee-logout" class="flex items-center justify-center gap-2 px-4 py-3 w-full bg-gray-100 hover:bg-red-50 text-red-600 rounded-xl font-semibold text-sm transition-all">
                 <i class="fa-solid fa-right-from-bracket"></i>
                 Logout Account
             </a>
@@ -169,7 +177,7 @@
                     <h3 class="text-lg md:text-xl font-extrabold">Need to launch a new batch hire requirement?</h3>
                     <p class="text-sm text-brandOrangeLight/90 mt-1">Set up eligibility, locations, and aggregate percentage criteria instantly.</p>
                 </div>
-                <a href="post_job.jsp" class="bg-white hover:bg-brandOrangeLight text-brandOrange px-6 py-3 rounded-xl font-bold text-sm shadow-sm flex items-center gap-2 transition-all shrink-0">
+                <a href="job_post.jsp" class="bg-white hover:bg-brandOrangeLight text-brandOrange px-6 py-3 rounded-xl font-bold text-sm shadow-sm flex items-center gap-2 transition-all shrink-0">
                     <i class="fa-solid fa-circle-plus"></i>
                     Create Job Post
                 </a>
